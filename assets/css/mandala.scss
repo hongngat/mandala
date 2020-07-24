@@ -528,6 +528,20 @@
                 transition-timing-function: cubic-bezier(0.62, 0.04, 0.82, 0.13);
                 width: 80%;
                 box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.1);
+                overflow: auto;
+            }
+            
+            .menu_content::-webkit-scrollbar {
+                width: 5px;
+            }
+            
+            .menu_content::-webkit-scrollbar-track {
+                height: 0;
+            }
+            
+            .menu_content::-webkit-scrollbar-thumb {
+                background-color: #D89C41;
+                outline: none;
             }
             
             .menu_content.close {
