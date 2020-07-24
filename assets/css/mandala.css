@@ -1219,8 +1219,22 @@ i {
   border-top: 1px solid #ededed; }
 
 .fmask.select .s {
-  overflow: auto;
-  height: 100px; }
+  overflow: hidden;
+  height: 100px;
+  overflow: auto !important;
+  width: 7px;
+  border-radius: 10px; }
+
+.fmask.select .s::-webkit-scrollbar {
+  width: 7px; }
+
+.fmask.select .s::-webkit-scrollbar-track {
+  height: 0; }
+
+.fmask.select .s::-webkit-scrollbar-thumb {
+  background-color: #D89C41;
+  border-radius: 5px;
+  outline: none; }
 
 .fmask.select li {
   padding: 8px 8px;
@@ -1894,7 +1908,7 @@ i {
 
 .scrollbars::-webkit-scrollbar-thumb {
   background-color: #D89C41;
-  outline: 1px solid #D89C41; }
+  outline: none; }
 
 #content_member {
   padding: 60px 0px 200px;
