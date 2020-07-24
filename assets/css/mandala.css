@@ -735,6 +735,8 @@ input[type=number] {
   background-color: #F9F9F9; }
   #img_home .img_big {
     padding: 0px 50px 0px 60px; }
+    #img_home .img_big img {
+      width: 100%; }
   #img_home .img_small {
     align-items: center;
     justify-content: flex-end;
