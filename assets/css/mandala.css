@@ -2795,6 +2795,8 @@ i {
       display: none; }
     #img_home .img_big {
       padding: 0; }
+      #img_home .img_big img {
+        height: 281px; }
 
   #slide_mandala {
     width: 100%;
