@@ -878,6 +878,86 @@
                 }
             }
             
+            //booking mobile
+            .booking_mobile {
+                position: fixed;
+                display: none;
+                z-index: 1001;
+                padding-top: 53px;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgb(0, 0, 0);
+                background-color: rgba(0, 0, 0, 0.4);
+                .gj-picker-bootstrap {
+                    z-index: 1100;
+                }
+            }
+            
+            .booking_mobile-content {
+                position: relative;
+                background-color: #fefefe;
+                margin: auto;
+                padding: 0;
+                border: 1px solid #888;
+                width: 80%;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                -webkit-animation-name: animatetop;
+                -webkit-animation-duration: 0.4s;
+                animation-name: animatetop;
+                animation-duration: 0.4s
+            }
+            
+            @-webkit-keyframes animatetop {
+                from {
+                    top: -300px;
+                    opacity: 0
+                }
+                to {
+                    top: 0;
+                    opacity: 1
+                }
+            }
+            
+            @keyframes animatetop {
+                from {
+                    top: -300px;
+                    opacity: 0
+                }
+                to {
+                    top: 0;
+                    opacity: 1
+                }
+            }
+            
+            .close {
+                color: black;
+                float: right;
+                font-size: 50px;
+                font-weight: bold;
+            }
+            
+            .close:hover,
+            .close:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+            
+            #link_booking_hotel {
+                padding: 5px 20px;
+                font-size: 14px;
+                color: #fff;
+                background-color: #D89C41;
+                border: none;
+                outline: none;
+                display: none;
+                font-weight: bold;
+            }
+            
+            //end booking mobile
             //Our-brand
             #our_brand {
                 padding: 100px 0px;
@@ -2760,8 +2840,65 @@
             // mobile 320-568px
             @media only screen and (min-width: 320px) and (max-width: 568px) {
                 // begin Home
+                .booking_desktop {
+                    display: none;
+                }
+                #link_booking_hotel {
+                    display: block;
+                }
+                .booking_mobile-content {
+                    width: 85%;
+                    label {
+                        font-size: 20px !important;
+                    }
+                    .check .md-form input:not([type]),
+                    .check .md-form input[type="text"]:not(.browser-default),
+                    .check .md-form input[type="number"]:not(.browser-default) {
+                        height: 50px;
+                        outline: none;
+                    }
+                    .col-lg-2 {
+                        margin-bottom: 20px;
+                        padding: 0;
+                    }
+                    .form_link_hover {
+                        height: 60px;
+                    }
+                    .md-form {
+                        .form-control {
+                            text-align: center;
+                            padding: 0px 20px 0px 25px !important;
+                        }
+                        input {
+                            font-size: 18px;
+                            outline: none;
+                        }
+                        i {
+                            font-size: 25px;
+                            margin-right: 5px;
+                        }
+                    }
+                    .nadults,
+                    .rooms {
+                        input {
+                            flex: 1;
+                        }
+                    }
+                }
+                .content_banner_club {
+                    top: 40% !important;
+                }
+                .content_banner_fix {
+                    top: 56% !important;
+                }
                 .content_banner {
-                    top: 20%;
+                    top: 30%;
+                }
+                #banner_home {
+                    height: 100%;
+                    img {
+                        height: 100%;
+                    }
                 }
                 .title_banner {
                     margin-bottom: 20px;
@@ -2777,42 +2914,6 @@
                         p {
                             display: none;
                         }
-                    }
-                }
-                .add_code {
-                    margin-bottom: 5px;
-                    .form-control {
-                        margin-left: 20px !important;
-                    }
-                }
-                .booking_hotel {
-                    .form_link_hover {
-                        height: 40px;
-                    }
-                    .md-form {
-                        .form-control {
-                            text-align: center;
-                            padding: 0px 20px 0px 25px !important;
-                        }
-                        input {
-                            font-size: 12px;
-                        }
-                        i {
-                            font-size: 15px;
-                            margin-right: 5px;
-                        }
-                        .nadults,
-                        .rooms {
-                            input {
-                                margin-right: 30px !important;
-                            }
-                            i {
-                                margin: 5px;
-                            }
-                        }
-                    }
-                    label {
-                        font-size: 12px;
                     }
                 }
                 .slide_banner_home {
@@ -5036,76 +5137,54 @@
                 }
             }
             
-            .modal {
-                /* Hidden by default */
-                position: fixed;
-                /* Stay in place */
-                z-index: 99999;
-                /* Sit on top */
-                padding-top: 100px;
-                /* Location of the box */
-                left: 0;
-                top: 0;
-                width: 100%;
-                /* Full width */
-                height: 100%;
-                /* Full height */
-                overflow: auto;
-                /* Enable scroll if needed */
-                background-color: rgb(0, 0, 0);
-                /* Fallback color */
-                background-color: rgba(0, 0, 0, 0.4);
-                /* Black w/ opacity */
-            }
-            
-            .modal-content {
-                position: relative;
-                background-color: #fefefe;
-                margin: auto;
-                padding: 0;
-                border: 1px solid #888;
-                width: 80%;
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                -webkit-animation-name: animatetop;
-                -webkit-animation-duration: 0.4s;
-                animation-name: animatetop;
-                animation-duration: 0.4s
-            }
-            /* Add Animation */
-            
-            @-webkit-keyframes animatetop {
-                from {
-                    top: -300px;
-                    opacity: 0
+            @media only screen and (max-width:375px) {
+                .title_banner {
+                    margin-bottom: 10px !important;
+                    h2 {
+                        font-size: 16px;
+                        margin: 0;
+                    }
                 }
-                to {
-                    top: 0;
-                    opacity: 1
+                .title_booking {
+                    h6 {
+                        font-size: 12px;
+                    }
+                    .dropdown {
+                        a {
+                            font-size: 14px;
+                        }
+                    }
                 }
-            }
-            
-            @keyframes animatetop {
-                from {
-                    top: -300px;
-                    opacity: 0
+                #link_booking_hotel {
+                    padding: 5px 10px;
+                    font-size: 12px;
                 }
-                to {
-                    top: 0;
-                    opacity: 1
+                .booking_mobile-content {
+                    width: 85%;
+                    label {
+                        font-size: 16px !important;
+                    }
+                    .check .md-form input:not([type]),
+                    .check .md-form input[type="text"]:not(.browser-default),
+                    .check .md-form input[type="number"]:not(.browser-default) {
+                        height: 40px;
+                    }
+                    .col-lg-2 {
+                        margin-bottom: 0;
+                    }
+                    .md-form {
+                        input {
+                            font-size: 16px;
+                        }
+                        i {
+                            font-size: 20px;
+                        }
+                    }
                 }
-            }
-            /* The Close Button */
-            
-            .close {
-                color: white;
-                float: right;
-                font-size: 28px;
-                font-weight: bold;
-            }
-            
-            .close:hover,
-            .close:focus {
-                color: #000;
-                text-decoration: none;
-                cursor: pointer;
+                .content_banner_club {
+                    top: 44% !important;
+                }
+                .content_banner_fix {
+                    top: 54% !important;
+                }
             }
