@@ -2219,18 +2219,19 @@ i {
 
   .booking_mobile-content {
     width: 85%; }
+    .booking_mobile-content .add_code {
+      margin-bottom: 20px; }
     .booking_mobile-content label {
-      font-size: 20px !important; }
+      font-size: 18px !important; }
     .booking_mobile-content .check .md-form input:not([type]),
     .booking_mobile-content .check .md-form input[type="text"]:not(.browser-default),
     .booking_mobile-content .check .md-form input[type="number"]:not(.browser-default) {
-      height: 50px;
+      height: 40px;
       outline: none; }
     .booking_mobile-content .col-lg-2 {
-      margin-bottom: 20px;
       padding: 0; }
     .booking_mobile-content .form_link_hover {
-      height: 60px; }
+      height: 50px; }
     .booking_mobile-content .md-form .form-control {
       text-align: center;
       padding: 0px 20px 0px 25px !important; }

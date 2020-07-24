@@ -2848,21 +2848,23 @@
                 }
                 .booking_mobile-content {
                     width: 85%;
+                    .add_code {
+                        margin-bottom: 20px;
+                    }
                     label {
-                        font-size: 20px !important;
+                        font-size: 18px !important;
                     }
                     .check .md-form input:not([type]),
                     .check .md-form input[type="text"]:not(.browser-default),
                     .check .md-form input[type="number"]:not(.browser-default) {
-                        height: 50px;
+                        height: 40px;
                         outline: none;
                     }
                     .col-lg-2 {
-                        margin-bottom: 20px;
                         padding: 0;
                     }
                     .form_link_hover {
-                        height: 60px;
+                        height: 50px;
                     }
                     .md-form {
                         .form-control {
