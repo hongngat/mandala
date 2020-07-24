@@ -1433,11 +1433,13 @@ i {
     position: absolute;
     bottom: 0;
     left: 0;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)); }
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    z-index: 1; }
   .form_imghot .title_imghot {
     position: absolute;
     left: 30px;
-    bottom: 20px; }
+    bottom: 20px;
+    z-index: 2; }
     .form_imghot .title_imghot a {
       font-family: Montserrat, sans-serif;
       color: #ffffff;
@@ -1502,7 +1504,8 @@ i {
       left: 0;
       width: 100%;
       height: 50%;
-      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)); }
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+      z-index: 1; }
     #news_hotel .form_beforimg img {
       height: 848px;
       width: 100%; }
@@ -1510,7 +1513,8 @@ i {
       position: absolute;
       bottom: 20px;
       left: 20px;
-      max-width: 300px; }
+      max-width: 300px;
+      z-index: 2; }
       #news_hotel .form_beforimg h5 a {
         color: #ffffff;
         font-size: 25px;
@@ -1552,6 +1556,10 @@ i {
   .pagination a {
     font-weight: bold; }
 
+.pagination .page-item.active .page-link:hover {
+  background-color: #FFFFFF;
+  color: #D89C41; }
+
 .form_imgpaper {
   position: relative;
   width: 100%;
@@ -1566,11 +1574,13 @@ i {
     position: absolute;
     bottom: 0;
     left: 0;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)); }
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    z-index: 1; }
   .form_imgpaper .title_imghot {
     position: absolute;
     left: 30px;
-    bottom: 20px; }
+    bottom: 20px;
+    z-index: 2; }
     .form_imgpaper .title_imghot a {
       font-family: Montserrat, sans-serif;
       color: #ffffff;
@@ -2174,7 +2184,7 @@ i {
       padding: 0; }
 
   .title_brand {
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 10px; }
 
   .img_brand img {
@@ -2199,9 +2209,9 @@ i {
     #slide_mandala .content_slide_hotel {
       padding: 30px 50px; }
       #slide_mandala .content_slide_hotel h6 {
-        font-size: 20px; }
+        font-size: 25px; }
       #slide_mandala .content_slide_hotel .data_number h6 {
-        font-size: 30px; }
+        font-size: 40px; }
       #slide_mandala .content_slide_hotel .data_number p {
         font-size: 14px; }
 
@@ -2254,12 +2264,12 @@ i {
   .title_placenew {
     padding: 30px 0px; }
     .title_placenew h6 {
-      font-size: 22px; }
+      font-size: 25px; }
     .title_placenew p {
       font-size: 14px; }
 
   .number_data h5 {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     margin: 0; }
   .number_data p {
@@ -2280,7 +2290,7 @@ i {
     padding: 30px 0px; }
 
   .title_albumnews h6 {
-    font-size: 20px; }
+    font-size: 25px; }
   .title_albumnews p {
     font-size: 14px; }
 
@@ -2507,7 +2517,7 @@ i {
       height: 100%; }
     #hot_news .form_imghot .title_imghot {
       left: 10px;
-      bottom: 0px;
+      bottom: 10px;
       margin: 0; }
       #hot_news .form_imghot .title_imghot a {
         font-size: 16px; }
@@ -2543,7 +2553,7 @@ i {
     #newspaper .col-12 {
       padding: 0 !important; }
     #newspaper .col-lg-4 {
-      border-right: none; }
+      border-right: none !important; }
     #newspaper .row {
       margin: 0; }
     #newspaper p {
@@ -2595,7 +2605,7 @@ i {
   #welcome_club {
     padding: 30px 0px; }
     #welcome_club .title_all h5 {
-      font-size: 20px; }
+      font-size: 25px; }
     #welcome_club .title_all p {
       font-size: 14px; }
 
@@ -2611,7 +2621,7 @@ i {
     text-align: left;
     padding: 20px 15px; }
     #content_club .col-lg-6 .text_content_club h5 {
-      font-size: 20px; }
+      font-size: 25px; }
     #content_club .col-lg-6 .text_content_club p {
       font-size: 14px; }
     #content_club .col-lg-6 .text_content_club .form_link_hover [data-wipe] {
@@ -2620,7 +2630,7 @@ i {
   #benefit_club {
     padding: 30px 0px; }
     #benefit_club .title_benefitclub {
-      font-size: 20px;
+      font-size: 25px;
       margin-bottom: 40px; }
     #benefit_club .col-lg-4 {
       border: none;
@@ -2632,9 +2642,9 @@ i {
     #content_destinations .col-lg-5 {
       padding-left: 15px !important; }
       #content_destinations .col-lg-5 .title_destinations h5 {
-        font-size: 20px; }
+        font-size: 25px; }
       #content_destinations .col-lg-5 .fmask.select .h label {
-        font-size: 15px; }
+        font-size: 16px; }
       #content_destinations .col-lg-5 .fmask.select .h {
         width: 75%; }
       #content_destinations .col-lg-5 .fmask.select .b {
@@ -2676,7 +2686,7 @@ i {
     #content_contact .title_all {
       margin-bottom: 50px; }
       #content_contact .title_all h5 {
-        font-size: 20px;
+        font-size: 25px;
         margin-bottom: 0; }
     #content_contact form {
       width: 100%; }
@@ -3062,7 +3072,9 @@ i {
   #news_hotel .col-lg-4 {
     padding-left: 0px; }
   #news_hotel .form_beforimg {
-    height: 633px; }
+    height: 100%; }
+    #news_hotel .form_beforimg img {
+      height: 633px; }
     #news_hotel .form_beforimg h5 a {
       font-size: 20px; }
 
@@ -3127,21 +3139,21 @@ i {
   #welcome_club {
     padding: 30px 0px; }
     #welcome_club .title_all h5 {
-      font-size: 20px; }
+      font-size: 28px; }
     #welcome_club .title_all p {
       font-size: 14px; }
 
   #content_club .col-lg-6 .text_content_club {
     padding: 90px 30px; }
     #content_club .col-lg-6 .text_content_club h5 {
-      font-size: 20px; }
+      font-size: 25px; }
     #content_club .col-lg-6 .text_content_club p {
       font-size: 14px; }
 
   #benefit_club {
     padding: 60px 0px; }
     #benefit_club .title_benefitclub {
-      font-size: 20px;
+      font-size: 25px;
       margin-bottom: 40px; }
     #benefit_club .col-lg-4 {
       padding: 20px 10px; }
@@ -3177,7 +3189,7 @@ i {
       width: 70%;
       margin-bottom: 60px; }
       #content_contact .row img {
-        width: 25%;
+        width: 20%;
         margin-bottom: 20px; }
       #content_contact .row .col-lg-6:first-child {
         margin-bottom: 50px; }
@@ -3188,7 +3200,7 @@ i {
     #content_contact .title_all {
       margin-bottom: 50px; }
       #content_contact .title_all h5 {
-        font-size: 32px;
+        font-size: 28px;
         margin-bottom: 0; }
     #content_contact form {
       width: 100%; }
@@ -3372,9 +3384,9 @@ i {
     font-size: 20px; }
 
   #news_hotel .form_beforimg {
-    height: 848px; }
+    height: 100%; }
     #news_hotel .form_beforimg img {
-      height: 100%;
+      height: 943px;
       width: 100%; }
 
   #newspaper .form_imgpaper img {
@@ -3428,9 +3440,15 @@ i {
     height: 50px;
     font-size: 30px; }
 
-  #news_hotel .form_beforimg h5 {
-    bottom: -123px;
-    max-width: 380px; }
+  #news_hotel .form_beforimg {
+    height: 100%; }
+    #news_hotel .form_beforimg img {
+      height: 1057px; }
+    #news_hotel .form_beforimg h5 {
+      bottom: 20px;
+      max-width: 380px; }
+      #news_hotel .form_beforimg h5 a {
+        font-size: 31px; }
 
   #newspaper .form_imgpaper img {
     height: 430px; }
@@ -3490,8 +3508,6 @@ i {
     font-size: 22px; }
   #news_hotel .list_newhotel p {
     font-size: 22px; }
-  #news_hotel .form_beforimg h5 a {
-    font-size: 31px; }
   #news_hotel .pagination li a {
     font-size: 25px; }
 

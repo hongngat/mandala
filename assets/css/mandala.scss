@@ -1816,11 +1816,13 @@
                     bottom: 0;
                     left: 0;
                     background-image: linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, 0));
+                    z-index: 1;
                 }
                 .title_imghot {
                     position: absolute;
                     left: 30px;
                     bottom: 20px;
+                    z-index: 2;
                     a {
                         font-family: Montserrat, sans-serif;
                         color: #ffffff;
@@ -1901,6 +1903,7 @@
                         width: 100%;
                         height: 50%;
                         background-image: linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, 0));
+                        z-index: 1;
                     }
                     img {
                         height: 848px;
@@ -1911,6 +1914,7 @@
                         bottom: 20px;
                         left: 20px;
                         max-width: 300px;
+                        z-index: 2;
                         a {
                             color: #ffffff;
                             font-size: 25px;
@@ -1968,6 +1972,11 @@
                 }
             }
             
+            .pagination .page-item.active .page-link:hover {
+                background-color: #FFFFFF;
+                color: #D89C41;
+            }
+            
             .form_imgpaper {
                 position: relative;
                 width: 100%;
@@ -1984,11 +1993,13 @@
                     bottom: 0;
                     left: 0;
                     background-image: linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, 0));
+                    z-index: 1;
                 }
                 .title_imghot {
                     position: absolute;
                     left: 30px;
                     bottom: 20px;
+                    z-index: 2;
                     a {
                         font-family: Montserrat, sans-serif;
                         color: #ffffff;
@@ -2807,7 +2818,7 @@
                     }
                 }
                 .title_brand {
-                    font-size: 20px;
+                    font-size: 25px;
                     margin-bottom: 10px;
                 }
                 .img_brand {
@@ -2840,11 +2851,11 @@
                     .content_slide_hotel {
                         padding: 30px 50px;
                         h6 {
-                            font-size: 20px;
+                            font-size: 25px;
                         }
                         .data_number {
                             h6 {
-                                font-size: 30px;
+                                font-size: 40px;
                             }
                             p {
                                 font-size: 14px;
@@ -2912,7 +2923,7 @@
                 .title_placenew {
                     padding: 30px 0px;
                     h6 {
-                        font-size: 22px;
+                        font-size: 25px;
                     }
                     p {
                         font-size: 14px;
@@ -2920,7 +2931,7 @@
                 }
                 .number_data {
                     h5 {
-                        font-size: 20px;
+                        font-size: 22px;
                         font-weight: bold;
                         margin: 0;
                     }
@@ -2946,7 +2957,7 @@
                 }
                 .title_albumnews {
                     h6 {
-                        font-size: 20px;
+                        font-size: 25px;
                     }
                     p {
                         font-size: 14px;
@@ -3273,7 +3284,7 @@
                         }
                         .title_imghot {
                             left: 10px;
-                            bottom: 0px;
+                            bottom: 10px;
                             margin: 0;
                             a {
                                 font-size: 16px;
@@ -3329,7 +3340,7 @@
                         padding: 0 !important;
                     }
                     .col-lg-4 {
-                        border-right: none;
+                        border-right: none !important;
                     }
                     .row {
                         margin: 0;
@@ -3403,7 +3414,7 @@
                     padding: 30px 0px;
                     .title_all {
                         h5 {
-                            font-size: 20px;
+                            font-size: 25px;
                         }
                         p {
                             font-size: 14px;
@@ -3428,7 +3439,7 @@
                             text-align: left;
                             padding: 20px 15px;
                             h5 {
-                                font-size: 20px;
+                                font-size: 25px;
                             }
                             p {
                                 font-size: 14px;
@@ -3444,7 +3455,7 @@
                 #benefit_club {
                     padding: 30px 0px;
                     .title_benefitclub {
-                        font-size: 20px;
+                        font-size: 25px;
                         margin-bottom: 40px;
                     }
                     .col-lg-4 {
@@ -3460,12 +3471,12 @@
                     .col-lg-5 {
                         .title_destinations {
                             h5 {
-                                font-size: 20px;
+                                font-size: 25px;
                             }
                         }
                         padding-left: 15px !important;
                         .fmask.select .h label {
-                            font-size: 15px;
+                            font-size: 16px;
                         }
                         .fmask.select .h {
                             width: 75%;
@@ -3529,7 +3540,7 @@
                     .title_all {
                         margin-bottom: 50px;
                         h5 {
-                            font-size: 20px;
+                            font-size: 25px;
                             margin-bottom: 0;
                         }
                     }
@@ -4084,7 +4095,10 @@
                         padding-left: 0px;
                     }
                     .form_beforimg {
-                        height: 633px;
+                        height: 100%;
+                        img {
+                            height: 633px;
+                        }
                         h5 {
                             a {
                                 font-size: 20px;
@@ -4181,7 +4195,7 @@
                     padding: 30px 0px;
                     .title_all {
                         h5 {
-                            font-size: 20px;
+                            font-size: 28px;
                         }
                         p {
                             font-size: 14px;
@@ -4193,7 +4207,7 @@
                         .text_content_club {
                             padding: 90px 30px;
                             h5 {
-                                font-size: 20px;
+                                font-size: 25px;
                             }
                             p {
                                 font-size: 14px;
@@ -4204,7 +4218,7 @@
                 #benefit_club {
                     padding: 60px 0px;
                     .title_benefitclub {
-                        font-size: 20px;
+                        font-size: 25px;
                         margin-bottom: 40px;
                     }
                     .col-lg-4 {
@@ -4258,7 +4272,7 @@
                         width: 70%;
                         margin-bottom: 60px;
                         img {
-                            width: 25%;
+                            width: 20%;
                             margin-bottom: 20px;
                         }
                         .col-lg-6 {
@@ -4276,7 +4290,7 @@
                     .title_all {
                         margin-bottom: 50px;
                         h5 {
-                            font-size: 32px;
+                            font-size: 28px;
                             margin-bottom: 0;
                         }
                     }
@@ -4562,9 +4576,9 @@
                 //begin tin tức
                 #news_hotel {
                     .form_beforimg {
-                        height: 848px;
+                        height: 100%;
                         img {
-                            height: 100%;
+                            height: 943px;
                             width: 100%;
                         }
                     }
@@ -4649,9 +4663,16 @@
                 //begin tin tức
                 #news_hotel {
                     .form_beforimg {
+                        height: 100%;
+                        img {
+                            height: 1057px;
+                        }
                         h5 {
-                            bottom: -123px;
+                            bottom: 20px;
                             max-width: 380px;
+                            a {
+                                font-size: 31px;
+                            }
                         }
                     }
                 }
@@ -4780,13 +4801,6 @@
                     .list_newhotel {
                         p {
                             font-size: 22px;
-                        }
-                    }
-                    .form_beforimg {
-                        h5 {
-                            a {
-                                font-size: 31px;
-                            }
                         }
                     }
                     .pagination {
