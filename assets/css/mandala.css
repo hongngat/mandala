@@ -2173,7 +2173,14 @@ i {
   .booking_hotel .md-form input {
     font-size: 12px; }
   .booking_hotel .md-form i {
-    font-size: 10px; }
+    font-size: 15px;
+    margin-right: 5px; }
+  .booking_hotel .md-form .nadults input,
+  .booking_hotel .md-form .rooms input {
+    margin-right: 30px !important; }
+  .booking_hotel .md-form .nadults i,
+  .booking_hotel .md-form .rooms i {
+    margin: 5px; }
   .booking_hotel label {
     font-size: 12px; }
 
@@ -3633,5 +3640,66 @@ i {
     padding: 60px 0px 50px 40px; }
     #img_home .img_small img {
       width: 100%; } }
+.modal {
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 99999;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */ }
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s; }
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0; }
+  to {
+    top: 0;
+    opacity: 1; } }
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0; }
+  to {
+    top: 0;
+    opacity: 1; } }
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold; }
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer; }
 
 /*# sourceMappingURL=mandala.css.map */

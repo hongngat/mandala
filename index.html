@@ -114,6 +114,58 @@
 
             </div>
         </header>
+        <div class="modal" id="myModal">
+            <div class="modal-content">
+                <div class="row booking_hotel   " id="">
+                    <div class="col"><span class="close">&times;</span></div>
+                    <div class=" col-lg-2 col-md-2 check check_in">
+                        <label for="">check in</label>
+                        <div class=" md-form  input-with-post-icon">
+                            <i class="fas fa-angle-down input-prefix"></i>
+                            <input type="text" class="datetime form-control " id="datepicker" />
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 check check_out">
+                        <label for="">check out</label>
+                        <div class=" md-form  input-with-post-icon">
+                            <i class="fas fa-angle-down  input-prefix"></i>
+                            <input type="text" class="datetime form-control " id="datepicker-1" />
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 check nadults">
+                        <label for="">nadults</label>
+                        <div class="number-input md-form  input-with-post-icon">
+                            <input min="0" value="1" type="number">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="fas fa-angle-up"></i></button>
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="fas fa-angle-down"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2  check rooms">
+                        <label for="">rooms</label>
+                        <div class="number-input md-form  input-with-post-icon ">
+                            <input class="quantity" min="0" name="quantity" value="1" type="number">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="fas fa-angle-up"></i></button>
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="fas fa-angle-down"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-lg-2  col-md-2 add_code">
+                        <label for="">
+                    add promo code
+                </label>
+                        <div class="md-form">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2">
+                        <div class="form_link_hover">
+                            <a class="link_hover" href="./aboutus.html" data-wipe="Search">Search</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
         <section id="banner_home">
             <div class="slide_banner_home">
                 <div class="item">
@@ -198,7 +250,7 @@
                     </div>
                     <div class="col-lg-2 col-md-2">
                         <div class="form_link_hover">
-                            <a class="link_hover" href="./aboutus.html" data-wipe="Search">Search</a>
+                            <a id="myBtn" class="link_hover" href="" data-wipe="Search">Search</a>
                         </div>
                     </div>
                 </div>
@@ -507,7 +559,33 @@
     <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
     <script src="./assets/js/slick.js"></script>
     <script src="./assets/js/madala.js"></script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
 
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>
