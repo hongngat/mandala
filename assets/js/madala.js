@@ -249,6 +249,12 @@ $(document).ready(function() {
             }
         });
     });
+    // dropdown
+    $(".dropdown-menu li a").click(function() {
+        var selText = $(this).text();
+        $(this).parents('.btn-group').find('.dropdown').html(' <i class="fas fa-angle-down"></i>' +
+            selText);
+    });
     //datepicker
     $('#datepicker').datepicker({
         uiLibrary: 'bootstrap4'

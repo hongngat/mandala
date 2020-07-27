@@ -488,29 +488,36 @@
     position: relative;
     width: 100%; }
 
-.dropdown {
+.btn-group {
   margin-right: 70px;
   cursor: pointer; }
-
-.dropdown-menu {
-  min-width: 20px;
-  padding: 0; }
-
-.dropdown-item {
-  padding: 5px 15px; }
+  .btn-group i {
+    margin-right: 10px;
+    color: #D89C41; }
+  .btn-group .dropdown {
+    color: #fff;
+    text-decoration: none; }
+  .btn-group .dropdown-item {
+    padding: 5px 15px; }
+    .btn-group .dropdown-item:focus-within {
+      background-color: #F8F9FA; }
+    .btn-group .dropdown-item:hover a {
+      color: #D89C41; }
+    .btn-group .dropdown-item a {
+      color: #000000; }
+  .btn-group .dropdown-menu {
+    min-width: 20px;
+    padding: 0; }
+  .btn-group a:hover {
+    text-decoration: none; }
 
 .phone_lang {
   font-family: Montserrat, sans-serif; }
-  .phone_lang .dropdown {
-    color: #ffffff; }
-    .phone_lang .dropdown:hover {
-      text-decoration: none;
-      color: #ffffff; }
-  .phone_lang .phone {
-    color: #ffffff; }
   .phone_lang i {
     margin-right: 10px;
     color: #D89C41; }
+  .phone_lang .phone {
+    color: #ffffff; }
 
 .headerTop {
   padding: 10px 0px 5px; }
@@ -549,6 +556,8 @@
   align-items: center;
   flex-wrap: wrap;
   justify-content: center; }
+  .slide_banner_home .slick-dots:hover a {
+    text-decoration: none; }
 
 .slide_banner_home .slick-dots li {
   position: relative;
@@ -556,7 +565,7 @@
   max-width: 100px;
   height: 20px;
   margin: 0 5px;
-  padding: 4px 0px;
+  padding: 3.5px 0px;
   cursor: pointer; }
   .slide_banner_home .slick-dots li i {
     font-size: 12px;
@@ -637,7 +646,7 @@ input::-webkit-inner-spin-button {
   justify-content: center; }
 .rooms input,
 .nadults input {
-  width: 13%;
+  width: 50%;
   padding: 0 !important; }
 
 input[type=number] {
@@ -709,13 +718,8 @@ input[type=number] {
     color: #ffffff; }
     .title_booking .flex p {
       margin: 0px 40px 0px 0px; }
-    .title_booking .flex .dropdown {
+    .title_booking .flex .btn-group {
       margin: 0; }
-      .title_booking .flex .dropdown i {
-        margin-right: 10px;
-        color: #D89C41; }
-      .title_booking .flex .dropdown a {
-        text-transform: none; }
 
 .link_hover {
   display: flex;
@@ -2217,8 +2221,13 @@ i {
   #link_booking_hotel {
     display: block; }
 
+  .title_banner {
+    margin-bottom: 10px !important; }
+
   .booking_mobile-content {
     width: 85%; }
+    .booking_mobile-content .booking_hotel {
+      padding: 20px !important; }
     .booking_mobile-content .add_code {
       margin-bottom: 20px; }
     .booking_mobile-content label {
@@ -2252,7 +2261,7 @@ i {
     top: 56% !important; }
 
   .content_banner {
-    top: 30%; }
+    top: 35%; }
 
   #banner_home {
     height: 100%; }
@@ -3726,11 +3735,9 @@ i {
     #img_home .img_small img {
       width: 100%; } }
 @media only screen and (max-width: 375px) {
-  .title_banner {
-    margin-bottom: 10px !important; }
-    .title_banner h2 {
-      font-size: 16px;
-      margin: 0; }
+  .title_banner h2 {
+    font-size: 16px;
+    margin: 0; }
 
   .title_booking h6 {
     font-size: 12px; }
