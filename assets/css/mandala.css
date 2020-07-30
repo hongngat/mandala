@@ -43,6 +43,9 @@
 .mr_t50 {
   margin-top: 50px; }
 
+.bgr_color {
+  background-color: #E4E4E4 !important; }
+
 .menu_content .container .menu ul li a {
   font-style: normal;
   font-size: 16px;
@@ -510,6 +513,9 @@
     padding: 0; }
   .btn-group a:hover {
     text-decoration: none; }
+
+.btn-group:focus {
+  outline: none; }
 
 .phone_lang {
   font-family: Montserrat, sans-serif; }

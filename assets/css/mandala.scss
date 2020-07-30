@@ -58,6 +58,10 @@
                 margin-top: 50px;
             }
             
+            .bgr_color {
+                background-color: #E4E4E4 !important;
+            }
+            
             // end style all
             // begin style nav menu
             .menu_content .container .menu ul li a {
@@ -604,6 +608,10 @@
                         text-decoration: none;
                     }
                 }
+            }
+            
+            .btn-group:focus {
+                outline: none;
             }
             
             .phone_lang {
